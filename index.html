@@ -7,42 +7,48 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Inicio</title>
 </head>
-<body id="container">
-    <header id="header">
+
+<body class="container-fluid" id="container">
+    <header class="container-fluid" id="header">
         <div id="logo">
             <img src="#" alt="">
         </div>
         <div id="titulo">
             <h1>Desarrollador WEB Freelancer</h1>
-            <p>Domingo Morelli</p>
+            <p class="animate__animated animate__heartBeat animate__infinite	infinite">Domingo Morelli</p>
         </div>
-        <nav id="menuCabecera">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/trabajos.html">Trabajos</a></li>
-                <li><a href="./pages/portfolio.html">Porfolio</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-             
-            </ul>
-        </nav>
+        <div class="nav-flex">
+
+
+            <div><a href="index.html">Home</a></div>
+            <div><a href="./pages/servicios.html">Servicios</a></div>
+            <div><a href="./pages/trabajos.html">Trabajos</a></div>
+            <div><a href="./pages/portfolio.html">Porfolio</a></div>
+            <div><a href="./pages/contacto.html">Contacto</a></div>
+
+
+
+        </div>
     </header>
 
 
     <div id="imagenFrontal">
 
-        <div class="boton">
-        <p>No dude en realizar sus consultas</p>
-        
-        <input class="boton btn" type="button" value="Contactar">
-            </div>
+        <div class="boton" >
+            <p>No dude en realizar sus consultas</p>
+
+            <input class="boton btn " type="button" value="Contactar">
+        </div>
     </div>
 
-    <main>
+    <main >
         <div id="box1">
             <h2 class="txtBox">Servicios WEB</h2>
             <ul>
@@ -52,26 +58,26 @@
                 <li><img src="./img/icons8-logo-php.svg" alt="php"> PHP</li>
                 <li><img src="./img/icons8-logo-de-mysql.svg" alt="MySQL"> MySQL</li>
             </ul>
-            
+
         </div>
         <div id="box2">
             <h2 class="txtBox">Desarrollo Videojuegos</h2>
-           <ul>
-            <li><img src="./img/icons8-unidad.svg" alt="unity">Unity</li>
-            <li><img src="./img/icons8-blender-3d.svg" alt="Blender">Blender</li>
-            <li><img src="./img/icons8-adobe-photoshop-48.png" alt="photoshop">Photoshop</li>
-            <li><img src="./img/icons8-c-sharp-logotipo.svg" alt="C#">C#</li>
-            <li><img src="./img/icons8-pixel-64.png" alt="pixel art">Pixel Art</li>
-           </ul>
+            <ul>
+                <li><img src="./img/icons8-unidad.svg" alt="unity">Unity</li>
+                <li><img src="./img/icons8-blender-3d.svg" alt="Blender">Blender</li>
+                <li><img src="./img/icons8-adobe-photoshop-48.png" alt="photoshop">Photoshop</li>
+                <li><img src="./img/icons8-c-sharp-logotipo.svg" alt="C#">C#</li>
+                <li><img src="./img/icons8-pixel-64.png" alt="pixel art">Pixel Art</li>
+            </ul>
         </div>
         <div id="box3">
             <h2 class="txtBox">Wordpress</h2>
-          <ul>
-            <li><img src="./img/icons8-wordpress.svg" alt="Wordpress">Wordpress</li>
-            <li><img src="./img/icons8-hosting-64.png" alt="Hosting">Hosting</li>
-            <li><img src="./img/icons8-dominio-48.png" alt="dominio">Dominio</li>
-            <li><img src="./img/icons8-seguridad-ssl-48.png" alt="SSL">Seguridad SSL</li>
-          </ul>
+            <ul>
+                <li><img src="./img/icons8-wordpress.svg" alt="Wordpress">Wordpress</li>
+                <li><img src="./img/icons8-hosting-64.png" alt="Hosting">Hosting</li>
+                <li><img src="./img/icons8-dominio-48.png" alt="dominio">Dominio</li>
+                <li><img src="./img/icons8-seguridad-ssl-48.png" alt="SSL">Seguridad SSL</li>
+            </ul>
         </div>
     </main>
 
@@ -87,30 +93,39 @@
         </div>
     </section>
 
-    <footer id="footer">
-        <nav id="menuFooter">
+    <footer  id="footer">
+        <nav  id="menuFooter">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/servicios.html">Servicios</a></li>
                 <li><a href="./pages/trabajos.html">Trabajos</a></li>
                 <li><a href="./pages/portfolio.html">Porfolio</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
-             
+
             </ul>
         </nav>
 
         <div id="copy">
             <p>copyright 2022</p>
         </div>
-        <div id="redes">
-            <a href="https://www.facebook.com/Minguito/" target="_blank"><img src="./img/icons8-facebook-nuevo-48.png" alt="facebook"></a>
-            <a href="https://www.youtube.com/channel/UCAjrhiqqfkDuW0kDE7AGyIw" target="_blank"><img src="./img/icons8-youtube.svg" alt="youtube"></a>
-            <a href="https://www.twitch.tv/minguito77" target="_blank"><img src="./img/icons8-twitch-48.png" alt="twitch"></a>
+        <div class="grid" id="redes">
+            <a href="https://www.facebook.com/Minguito/" target="_blank"><img src="./img/icons8-facebook-nuevo-48.png"
+                    alt="facebook"></a>
+            <a  href="https://www.youtube.com/channel/UCAjrhiqqfkDuW0kDE7AGyIw" target="_blank"><img
+                    src="./img/icons8-youtube.svg" alt="youtube"></a>
+            <a  href="https://www.twitch.tv/minguito77" target="_blank"><img src="./img/icons8-twitch-48.png"
+                    alt="twitch"></a>
 
         </div>
 
     </footer>
-    
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
+</html>
+</body>
+
 </html>
