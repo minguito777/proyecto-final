@@ -1,10 +1,13 @@
 *{
     box-sizing: border-box;
+    width:auto;
+    margin: auto;
 }
 
 #container {
     background-color: rgba(198, 202, 202, 0.651);
-    max-width: fit-content;
+    
+    
     
 }
 
@@ -23,7 +26,7 @@
 }
 #titulo p {
     font-family: 'Courier New', Courier, monospace;
-    
+    font-size: 40px;
     padding-top: 20px;
     margin-bottom: 10px ;
     text-align: center;
@@ -48,7 +51,7 @@
     background-color: rgb(8, 110, 141);
     color: rgb(17, 17, 20);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 40px;
     border-radius: 8px;
    
 }
@@ -71,7 +74,7 @@
     background-image: url(../img/hero.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 500px;
     
     
        
@@ -103,15 +106,26 @@
       
        
 }
+.btn p{
+    background-color: rgba(167, 87, 87, 0.671);
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
 .boton .btn:hover{
     background-color: black;
     color: white;
 }
+.btn p:hover{
+    background-color: black;
+    color: white;
+
+}
 /* Main de las paginas */
 main {
     width: 100%;
-    height: 500px;
-    margin: 0 67px 0 67px;
+    height: auto;
+    
     background-color: rgba(198, 202, 202, 0.651);
     display: flex;
 }/* Fin del Main */
@@ -119,14 +133,14 @@ main {
 #box1, #box2, #box3{
 
     width: 40%;
-    height: 350px;
+    height: auto;
     background-color: rgba(198, 202, 202, 0.651);
     
     flex-direction: row;
     justify-content:space-evenly;
     
+    margin: 5px;
     
-    margin: 50px;
 }
 
 .txtBox {
@@ -156,7 +170,7 @@ main {
 .bajo {
     width: 100%;
     height: 500px;
-    margin: 0 67px 0 67px;
+    
     background-color: rgba(198, 202, 202, 0.651);
 }
 .txt {
@@ -196,13 +210,13 @@ main {
     width: 3fr;
     height: 2fr;
     background-color: black;
-    position: relative;
+    
     
 }
 #menuFooter ul li {
     display: inline;
     color: white;
-    margin: auto;
+   
     
 }
 #menuFooter ul li a {
@@ -210,25 +224,33 @@ main {
     margin-left: 7px;
     padding-left: 7px;
     color: white;
+    margin-top: 2%;
 }
 #menuFooter ul li a:hover{
     
     color: rgb(144, 151, 44);
 }
 
-#copy {
-    position: relative;
-    left: 500px;
-    top: 50px;
-    font-weight: 700;
+#redes li a {
+    width: auto;
+    height: auto;
+}
+#copy p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: white;
 }
+
+
 #redes {
-    height: 30px;
+    height: auto;
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
-margin: 10px;
+margin-bottom: 2%;
+
+
  
  
  
