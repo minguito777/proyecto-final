@@ -1,1 +1,64 @@
-/*# sourceMappingURL=main.css.map */
+/* Variables colores */
+/* variables fonts */
+header {
+  width: 100%;
+  height: auto;
+  background-color: rgba(198, 202, 202, 0.651);
+}
+header #titulo {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+}
+header #titulo p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.nav-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.nav-flex div a {
+  text-decoration: none;
+  background-color: rgb(8, 110, 141);
+  color: rgb(17, 17, 20);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  border-radius: 8px;
+}
+.nav-flex div a:hover {
+  background-color: rgb(17, 17, 20);
+  color: white;
+}
+
+#imagenFrontal {
+  width: 80%;
+  margin: auto;
+  height: 480px;
+}
+#imagenFrontal img:hover {
+  transform: rotatex(360deg);
+  background-color: tomato;
+  transition: all 2s;
+}
+
+/* mixin */
+.btn--danger {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid;
+  font-size: 40px;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 8px;
+  background-color: rgb(8, 110, 141);
+}
+.btn--danger:hover {
+  background-color: rgb(17, 17, 20);
+  color: white;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,83 @@
+@import 'vars';
+header {
+    width: 100%;
+    height: auto;
+    background-color: $colorBg;
+    #titulo {
+        font-family: $titleFont;
+        text-align: center;
+
+        p {
+            font-family: $headFont;
+            font-size: 40px;
+            padding-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+}
+
+.nav-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 5px;
+
+    div a {
+        text-decoration: none;
+        background-color: $colorBtn;
+        color: rgb(17, 17, 20);
+        font-family: $btnFont;
+        font-size: 40px;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: $colorBtnHoverBg;
+
+            color:$colorBtnHoverText;
+        }
+    }
+}
+
+#imagenFrontal {
+    width: 80%;
+    margin: auto;
+    height: 480px;
+
+    img:hover {
+        transform: rotatex(360deg);
+        background-color: tomato;
+        transition: all 2s;
+    }
+}
+
+/* mixin */
+
+@mixin btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: $btnFont;
+    border-radius: 8px;
+}
+
+
+
+.btn--danger{
+    @include btn;
+    background-color: $colorBtn;
+    &:hover {
+        background-color: $colorBtnHoverBg;
+        color: $colorBtnHoverText;
+    }
+}
+
+
+
+  
+
+
+
+
