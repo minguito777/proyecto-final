@@ -1,8 +1,11 @@
 @import 'vars';
+
+
 header {
     width: 100%;
     height: auto;
     background-color: $colorBg;
+
     #titulo {
         font-family: $titleFont;
         text-align: center;
@@ -34,7 +37,7 @@ header {
         &:hover {
             background-color: $colorBtnHoverBg;
 
-            color:$colorBtnHoverText;
+            color: $colorBtnHoverText;
         }
     }
 }
@@ -43,6 +46,7 @@ header {
     width: 80%;
     margin: auto;
     height: 480px;
+    background-color: red;
 
     img:hover {
         transform: rotatex(360deg);
@@ -50,6 +54,7 @@ header {
         transition: all 2s;
     }
 }
+
 
 /* mixin */
 
@@ -65,54 +70,66 @@ header {
 
 
 
-.btn--danger{
+
+.btn--danger {
     @include btn;
     background-color: $colorBtn;
+
     &:hover {
         background-color: $colorBtnHoverBg;
         color: $colorBtnHoverText;
     }
 }
-main{
+
+main {
     width: 100%;
     height: auto;
     background-color: $colorBg;
     display: flex;
 }
-#box1, #box2, #box3{
+
+#box1,
+#box2,
+#box3 {
 
     width: 40%;
     height: auto;
-    background-color:$colorBg;    
+    background-color: $colorBg;
     flex-direction: row;
-    justify-content:space-evenly;    
+    justify-content: space-evenly;
     margin: 5px;
-    &:hover{
+
+    &:hover {
         transform: skew(-8deg, 359deg);
         border: 1px solid black;
-       
+
     }
+
     ul li {
         font-weight: bold;
     }
-    .txtBox {
-    font: {
-        size: large;
-        weight: bold;
-        family: $titleFont;
 
+    .txtBox {
+        font: {
+            size: large;
+            weight: bold;
+            family: $titleFont;
+
+        }
+
+        text-align: center;
     }
-    text-align: center;
-}ul li img{
-     width: 50px;
-    height: 50px;
-}
+
+    ul li img {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .bajo {
     width: 100%;
-    height: 500px;    
-    background-color:$colorBg;
+    height: 500px;
+    background-color: $colorBg;
 }
 
 
@@ -124,17 +141,21 @@ main{
     float: left;
     padding: 20px;
     margin: 15px;
+
     p {
         font: {
             size: 3rem;
             style: italic;
             family: $headFont;
-            
+
         }
-    }color: red;
+    }
+
+    color: red;
 
 }
-.img{
+
+.img {
     width: 40%;
     height: 50%;
     background-image: url(../img/phpCode.png);
@@ -158,46 +179,205 @@ main{
     width: 3fr;
     height: 2fr;
     background-color: $colorBtnHoverBg;
+
     ul li {
         display: inline;
         color: $colorBtnHoverText;
+
         a {
             text-decoration: solid;
             margin-left: 7px;
             padding-left: 7px;
             color: white;
             margin-top: 2%;
+
             &:hover {
                 color: rgb(144, 151, 44);
             }
         }
     }
 }
+
 #redes {
     height: auto;
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+
     li a {
         width: auto;
         height: auto;
     }
 
 }
+
 #copy p {
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: $colorBtnHoverText;
 }
+
 .menuHamburguesaMovile {
-    display:none;
+    display: none;
 }
+
 /* FIN DEL FOOTER */
 
-  
+.txtBox h2 {
+    font: {
+        size: 2rem;
+        weight: bold;
+        family: $titleFont;
+
+    }
+
+    text-align: center;
+}
+
+/* Servicios */
+
+#boxService {
+    display: flex;
+    display: row;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    div:hover {
+        transform: scale(1.3,1.3);
+    }
+
+    #boxS1,
+    #boxS2,
+    #boxS3,
+    #boxS4 {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(34, 41, 23, 0.651);
+        overflow: hidden;
+        margin: 50px;
+        border: 5px solid black;
+        border-radius: 10px;
+        
+    }
+
+    .txt--box {
+        color: aqua;
+    }
+}
+
+.video {
+    width: 520px;
+    height: 320px;
+    margin-left: 50px;
+    border-top: 5px dashed blue;
+    border-right: 5px dashed green;
+    border-left: 5px dashed red;
+    border-bottom: 5px dashed yellow;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.txt--info {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    position: absolute;
+    left: 800px;
+    top: 700px;
+    font-style: italic;
+}
+
+/* Trabajos */
+.__column {
+    display: flex;
+    flex-direction: column;
+
+    &--info {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 
 
 
+.linkJob img {
+    width: 150px;
+    height: 120px;
+    margin: 50px;
+    image-rendering: optimizeQuality;
 
+}
+
+.info {
+
+
+    margin: 80px;
+    flex-wrap: nowrap;
+    border: 3px dashed rgba(0, 0, 0, 0.548);
+    border-radius: 5px;
+
+    p {
+        color: black;
+        text-align: center;
+        font-size: 1.1rem;
+    }:hover{
+        background-color: black;
+        color: aqua;
+        transform: scale(1, 2);
+    }
+
+}
+.videoTrabajos {
+    width: 200px;
+    height: 150px;    
+    position: relative;
+    top:  300px;
+    iframe {
+        width: 100%;
+    height: 100%;
+    }
+}
+
+/* Portfolio */
+
+.carrousel {
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4 {
+        border: 1px solid black;
+        width: 50%;
+        .card {
+            align-items: center;
+        }
+
+    }
+   
+}
+.infoWork {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    gap: 5px;
+}
+
+
+@import 'media';
