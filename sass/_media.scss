@@ -48,26 +48,27 @@ $mobile : 580px;
     }
 
     #boxService {
-        display: flex;        
+        display: flex;
         flex-direction: column;
-        div:hover{
-            transform: scale(1,1);
+
+        div:hover {
+            transform: scale(1, 1);
         }
-      
-        
-    
+
+
+
         #boxS1,
         #boxS2,
         #boxS3,
         #boxS4 {
-            
+
             align-items: baseline;
             background-color: red;
             margin-inline: 0;
-            
+
         }
-    
-        
+
+
     }
 
     .txt--info {
@@ -130,5 +131,53 @@ $mobile : 580px;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+    }
+
+    /* Portfolio */
+
+    .boxFlex {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+
+        .box1,
+        .box2,
+        .box3 {
+
+
+            width: 100%;
+
+
+            p {
+                text-align: center;
+                margin-top: 15px;
+                padding-top: 20px;
+            }
+
+
+        }
+    }
+
+    .videoTrabajos {
+        display: none;
+    }
+
+    .info {
+
+
+        margin-left: 5px;
+        margin-right: 8px;
+
+
+
+
+        :hover {
+            background-color: rgba(78, 74, 74, 0);
+            color: black;
+            transform: scale(1, 1);
+        }
+
     }
 }

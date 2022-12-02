@@ -46,7 +46,7 @@ header {
     width: 80%;
     margin: auto;
     height: 480px;
-    background-color: red;
+    background-color: $colorBg;
 
     img:hover {
         transform: rotatex(360deg);
@@ -244,8 +244,9 @@ main {
     flex-direction: row;
     height: auto;
     width: auto;
+
     div:hover {
-        transform: scale(1.3,1.3);
+        transform: scale(1.3, 1.3);
     }
 
     #boxS1,
@@ -259,7 +260,7 @@ main {
         margin: 50px;
         border: 5px solid black;
         border-radius: 10px;
-        
+
     }
 
     .txt--box {
@@ -328,56 +329,112 @@ iframe {
         color: black;
         text-align: center;
         font-size: 1.1rem;
-    }:hover{
+    }
+
+    :hover {
         background-color: black;
         color: aqua;
         transform: scale(1, 2);
     }
 
 }
+
 .videoTrabajos {
     width: 200px;
-    height: 150px;    
+    height: 150px;
     position: relative;
-    top:  300px;
+    top: 300px;
+
     iframe {
         width: 100%;
-    height: 100%;
+        height: 100%;
     }
 }
 
 /* Portfolio */
 
-.carrousel {
-    padding: 20px;
+.boxFlex {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     width: 100%;
-    margin: 0 auto;
-    .caja1,
-    .caja2,
-    .caja3,
-    .caja4 {
-        border: 1px solid black;
-        width: 50%;
-        .card {
-            align-items: center;
-        }
-
-    }
-   
-}
-.infoWork {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    height: auto;
-    gap: 5px;
+    margin-top: 15px;
+
+    .box1,
+    .box2,
+    .box3 {
+        border: 1px dashed pink;
+        height: auto;
+        width: 30%;
+        padding: 10px;
+
+        .card {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            img {
+                border: 2px solid black;
+            }
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 5px;
+              p {
+                text-align: center;
+                margin-top: 5px;
+              }
+              
+              
+            }
+        }
+    }
+
 }
+
+.pFlex {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        color: $colorBtn;
+        font-family: $titleFont;
+    }
+
+    p {
+        color: rgb(17, 17, 20);
+        font-size: large;
+        font-family: sans-serif;
+    }
+
+}
+
+.bloqueTexto {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 700;
+    font-style: normal;
+    font-family: sans-serif;
+    color: red;
+}
+
+.bloqueTexto--center {
+    @extend.bloqueTexto;
+    text-align: center;
+}
+.bloqueTexto--right {
+    @extend .bloqueTexto;
+    color: blue;
+}
+.bloqueTexto--left {
+    @extend .bloqueTexto;
+    color: red;
+}
+
+
+
 
 
 @import 'media';

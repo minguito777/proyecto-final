@@ -40,7 +40,7 @@ header #titulo p {
   width: 80%;
   margin: auto;
   height: 480px;
-  background-color: red;
+  background-color: rgba(198, 202, 202, 0.651);
 }
 #imagenFrontal img:hover {
   transform: rotatex(360deg);
@@ -300,37 +300,83 @@ iframe {
 }
 
 /* Portfolio */
-.carrousel {
-  padding: 20px;
+.boxFlex {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   width: 100%;
-  margin: 0 auto;
+  justify-content: space-around;
+  margin-top: 15px;
 }
-.carrousel .caja1,
-.carrousel .caja2,
-.carrousel .caja3,
-.carrousel .caja4 {
-  border: 1px solid black;
-  width: 50%;
+.boxFlex .box1,
+.boxFlex .box2,
+.boxFlex .box3 {
+  border: 1px dashed pink;
+  height: auto;
+  width: 30%;
+  padding: 10px;
 }
-.carrousel .caja1 .card,
-.carrousel .caja2 .card,
-.carrousel .caja3 .card,
-.carrousel .caja4 .card {
+.boxFlex .box1 .card,
+.boxFlex .box2 .card,
+.boxFlex .box3 .card {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.boxFlex .box1 .card img,
+.boxFlex .box2 .card img,
+.boxFlex .box3 .card img {
+  border: 2px solid black;
+}
+.boxFlex .box1 .card a,
+.boxFlex .box2 .card a,
+.boxFlex .box3 .card a {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 5px;
+}
+.boxFlex .box1 .card a p,
+.boxFlex .box2 .card a p,
+.boxFlex .box3 .card a p {
+  text-align: center;
+  margin-top: 5px;
 }
 
-.infoWork {
-  margin: 10px;
+.pFlex {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-flow: column wrap;
   align-items: center;
-  width: 50%;
-  height: auto;
-  gap: 5px;
+  justify-content: center;
+}
+.pFlex h2 {
+  color: rgb(8, 110, 141);
+  font-family: "Permanent Marker", cursive;
+}
+.pFlex p {
+  color: rgb(17, 17, 20);
+  font-size: large;
+  font-family: sans-serif;
+}
+
+.bloqueTexto, .bloqueTexto--left, .bloqueTexto--right, .bloqueTexto--center {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 700;
+  font-style: normal;
+  font-family: sans-serif;
+  color: red;
+}
+
+.bloqueTexto--center {
+  text-align: center;
+}
+
+.bloqueTexto--right {
+  color: blue;
+}
+
+.bloqueTexto--left {
+  color: red;
 }
 
 @media (max-width: 580px) {
@@ -438,5 +484,37 @@ iframe {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+  }
+  /* Portfolio */
+  .boxFlex {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .boxFlex .box1,
+.boxFlex .box2,
+.boxFlex .box3 {
+    width: 100%;
+  }
+  .boxFlex .box1 p,
+.boxFlex .box2 p,
+.boxFlex .box3 p {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 20px;
+  }
+  .videoTrabajos {
+    display: none;
+  }
+  .info {
+    margin-left: 5px;
+    margin-right: 8px;
+  }
+  .info :hover {
+    background-color: rgba(78, 74, 74, 0);
+    color: black;
+    transform: scale(1, 1);
   }
 }/*# sourceMappingURL=main.css.map */
