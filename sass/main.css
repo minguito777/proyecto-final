@@ -358,27 +358,31 @@ iframe {
   font-family: sans-serif;
 }
 
-.bloqueTexto, .bloqueTexto--left, .bloqueTexto--right, .bloqueTexto--center {
+.bloqueTexto, p.bloqueTexto--mas, p.bloqueTexto--azu, p.bloqueTexto--vio, p.bloqueTexto--red {
   font-size: 24px;
   line-height: normal;
   font-weight: 700;
   font-style: normal;
   font-family: sans-serif;
-  color: red;
 }
 
-.bloqueTexto--center {
-  text-align: center;
+p.bloqueTexto--red {
+  color: crimson;
 }
 
-.bloqueTexto--right {
+p.bloqueTexto--vio {
+  color: blueviolet;
+}
+
+p.bloqueTexto--azu {
   color: blue;
 }
 
-.bloqueTexto--left {
-  color: red;
+p.bloqueTexto--mas {
+  color: black;
 }
 
+/* media querys */
 @media (max-width: 580px) {
   .nav-flex div {
     display: flex;

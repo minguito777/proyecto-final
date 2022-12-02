@@ -417,24 +417,34 @@ iframe {
     font-weight: 700;
     font-style: normal;
     font-family: sans-serif;
-    color: red;
+    
+    
 }
 
-.bloqueTexto--center {
-    @extend.bloqueTexto;
-    text-align: center;
+p.bloqueTexto--red {
+    @extend .bloqueTexto;
+    
+    color: crimson;
 }
-.bloqueTexto--right {
+p.bloqueTexto--vio {
+    @extend .bloqueTexto;
+    
+    
+    color: blueviolet;
+}
+p.bloqueTexto--azu {
     @extend .bloqueTexto;
     color: blue;
+    
 }
-.bloqueTexto--left {
+p.bloqueTexto--mas {
     @extend .bloqueTexto;
-    color: red;
+    color: black;
+    
 }
 
 
 
-
+/* media querys */
 
 @import 'media';
