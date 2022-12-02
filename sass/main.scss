@@ -265,6 +265,7 @@ main {
 
     .txt--box {
         color: aqua;
+        text-align: center;
     }
 }
 
@@ -372,20 +373,23 @@ iframe {
             width: 100%;
             height: 100%;
             background-color: transparent;
+
             img {
                 border: 2px solid black;
             }
+
             a {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin: 5px;
-              p {
-                text-align: center;
-                margin-top: 5px;
-              }
-              
-              
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+
+                p {
+                    text-align: center;
+                    margin-top: 5px;
+                }
+
+
             }
         }
     }
@@ -417,32 +421,81 @@ iframe {
     font-weight: 700;
     font-style: normal;
     font-family: sans-serif;
-    
-    
+
+
 }
 
 p.bloqueTexto--red {
     @extend .bloqueTexto;
-    
+
     color: crimson;
 }
+
 p.bloqueTexto--vio {
     @extend .bloqueTexto;
-    
-    
+
+
     color: blueviolet;
 }
+
 p.bloqueTexto--azu {
     @extend .bloqueTexto;
     color: blue;
-    
+
 }
+
 p.bloqueTexto--mas {
     @extend .bloqueTexto;
     color: black;
-    
+
 }
 
+
+/* Contacto */
+
+.contact {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+
+}
+
+.formulario {
+    input {
+        width: 100%;
+        border: none;
+        padding: 1.5rem;
+        border-radius: .5rem;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: .5rem;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        border: none;
+        margin-bottom: 1rem;
+        column-gap: 1rem;
+    }
+}
+
+.map {
+    width: 70%;
+    height: 50%;
+    margin: auto;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 
 /* media querys */
