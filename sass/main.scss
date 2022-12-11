@@ -1,8 +1,17 @@
 @import 'vars';
 
- .bagkgroundHome{
-    background: linear-gradient( 170deg, $colorBg 55%, blue 30% ,rgba(0, 0, 255, 0.74) 80%, $colorBg 40%);
+ .backgroundHome {
+    background: $bgHome;
     
+}
+.backgroundSer {
+    background: $bgService;
+}
+.backgroundWork {
+    background:$bgWorks;
+}
+.backgroundPort {
+    background: $bgPortfolio;
 }
 header {
     width: 100%;
@@ -42,7 +51,7 @@ header {
 
         &:hover {
             background-color: $colorBtnHoverBg;
-
+            font-family: $titleFont;
             color: $colorBtnHoverText;
         }
     }

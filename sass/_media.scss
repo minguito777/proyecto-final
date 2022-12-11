@@ -1,7 +1,7 @@
 $mobile : 580px;
 
 @media (max-width: $mobile) {
-    .nav-flex div {
+    .nav-flex div  {
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -11,14 +11,15 @@ $mobile : 580px;
         background-color: $colorBtn;
         color: rgb(17, 17, 20);
         font-family: $btnFont;
-        font-size: 40px;
-        border-radius: 8px;
+        height: auto;
+        
+        border-radius: 25px;
         width: 100%;
         margin: 2px;
 
         :hover {
             background-color: $colorBtnHoverBg;
-
+            font-family: $titleFont;
             color: $colorBtnHoverText;
         }
     }

@@ -1,7 +1,19 @@
 /* Variables colores */
 /* variables fonts */
-.bagkgroundHome {
+.backgroundHome {
   background: linear-gradient(170deg, rgba(198, 202, 202, 0.651) 55%, blue 30%, rgba(0, 0, 255, 0.74) 80%, rgba(198, 202, 202, 0.651) 40%);
+}
+
+.backgroundSer {
+  background: linear-gradient(170deg, rgba(198, 202, 202, 0.651) 55%, rgb(162, 0, 255) 30%, rgba(174, 0, 255, 0.74) 80%, rgba(198, 202, 202, 0.651) 40%);
+}
+
+.backgroundWork {
+  background: linear-gradient(170deg, rgba(198, 202, 202, 0.651) 55%, rgb(208, 255, 0) 30%, rgba(208, 255, 0, 0.74) 80%, rgba(198, 202, 202, 0.651) 40%);
+}
+
+.backgroundPort {
+  background: linear-gradient(170deg, rgba(198, 202, 202, 0.651) 55%, rgb(51, 255, 0) 30%, rgba(43, 255, 0, 0.74) 80%, rgba(198, 202, 202, 0.651) 40%);
 }
 
 header {
@@ -39,6 +51,7 @@ header #titulo p {
 }
 .nav-flex div a:hover {
   background-color: rgb(17, 17, 20);
+  font-family: "Permanent Marker", cursive;
   color: white;
 }
 
@@ -452,13 +465,14 @@ p.bloqueTexto--mas {
     background-color: rgb(8, 110, 141);
     color: rgb(17, 17, 20);
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 40px;
-    border-radius: 8px;
+    height: auto;
+    border-radius: 25px;
     width: 100%;
     margin: 2px;
   }
   .nav-flex div :hover {
     background-color: rgb(17, 17, 20);
+    font-family: "Permanent Marker", cursive;
     color: white;
   }
   #imagenFrontal {
