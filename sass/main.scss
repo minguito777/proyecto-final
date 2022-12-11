@@ -1,6 +1,9 @@
 @import 'vars';
 
-
+ .bagkgroundHome{
+    background: linear-gradient( 170deg, $colorBg 55%, blue 30% ,rgba(0, 0, 255, 0.74) 80%, $colorBg 40%);
+    
+}
 header {
     width: 100%;
     height: auto;
@@ -43,17 +46,30 @@ header {
 }
 
 #imagenFrontal {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    height: 480px;
-    background-color: $colorBg;
-
-    img:hover {
-        transform: rotatex(360deg);
-        background-color: tomato;
-        transition: all 2s;
+    height: auto;
+    
+    div {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
+
+    
 }
+
+.boxGradiante {
+    height: 700px;
+    
+    
+        
+      
+}
+
 
 
 /* mixin */
@@ -84,7 +100,7 @@ header {
 main {
     width: 100%;
     height: auto;
-    background-color: $colorBg;
+    
     display: flex;
 }
 
@@ -129,7 +145,7 @@ main {
 .bajo {
     width: 100%;
     height: 500px;
-    background-color: $colorBg;
+   
 }
 
 
@@ -237,7 +253,9 @@ main {
 }
 
 /* Servicios */
-
+body {
+    background-color: $colorBg;
+}
 #boxService {
     display: flex;
     display: row;
