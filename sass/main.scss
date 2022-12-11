@@ -1,22 +1,41 @@
 @import 'vars';
 
- .backgroundHome {
+.backgroundHome {
     background: $bgHome;
-    
+
 }
+
 .backgroundSer {
     background: $bgService;
 }
+
 .backgroundWork {
-    background:$bgWorks;
+    background: $bgWorks;
 }
+
 .backgroundPort {
     background: $bgPortfolio;
 }
+
+.backgroundContact {
+    background: $bgContacto;
+}
+
 header {
     width: 100%;
     height: auto;
-    background-color: $colorBg;
+    background-color: rgb(146, 143, 163);
+    margin: 5px;
+    padding: 10px;
+
+    #logo {
+        img {
+            margin: 5px;
+            float: left;
+            width: 80px;
+            height: 80px;
+        }
+    }
 
     #titulo {
         font-family: $titleFont;
@@ -37,7 +56,7 @@ header {
     flex-flow: row wrap;
     justify-content: space-evenly;
     padding: 5px;
-    
+
 
     div a {
         text-decoration: none;
@@ -48,6 +67,7 @@ header {
         font-size: 50px;
         border-radius: 25px;
         border: 3px solid beige;
+        
 
         &:hover {
             background-color: $colorBtnHoverBg;
@@ -61,25 +81,26 @@ header {
     width: 100%;
     margin: auto;
     height: auto;
-    
+
     div {
         width: 100%;
         height: auto;
+
         img {
             width: 100%;
             height: auto;
         }
     }
 
-    
+
 }
 
 .boxGradiante {
     height: 700px;
-    
-    
-        
-      
+
+
+
+
 }
 
 
@@ -88,7 +109,7 @@ header {
 
 @mixin btn {
     display: inline-block;
-    padding: 10px 20px;    
+    padding: 10px 20px;
     font-size: 40px;
     text-decoration: none;
     font-family: $btnFont;
@@ -116,7 +137,7 @@ header {
 main {
     width: 100%;
     height: auto;
-    
+
     display: flex;
 }
 
@@ -161,7 +182,7 @@ main {
 .bajo {
     width: 100%;
     height: 500px;
-   
+
 }
 
 
@@ -272,6 +293,7 @@ main {
 body {
     background-color: $colorBg;
 }
+
 #boxService {
     display: flex;
     display: row;
