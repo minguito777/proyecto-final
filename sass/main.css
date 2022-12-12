@@ -610,6 +610,7 @@ p.bloqueTexto--mas {
   #menuFooter {
     display: none;
   }
+  /* Trabajos */
   .jobs {
     display: flex;
     flex-direction: column;
@@ -635,6 +636,14 @@ p.bloqueTexto--mas {
   .jobs .item-d img {
     width: 100%;
     height: auto;
+  }
+  .videoTrabajos1 {
+    position: relative;
+    top: 300px;
+    right: 55px;
+  }
+  .videoTrabajos1 p {
+    display: none;
   }
   .videoTrabajos iframe {
     width: 100%;
