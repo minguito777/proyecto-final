@@ -67,7 +67,7 @@ header {
         font-size: 50px;
         border-radius: 25px;
         border: 3px solid beige;
-        
+
 
         &:hover {
             background-color: $colorBtnHoverBg;
@@ -351,28 +351,107 @@ iframe {
     font-style: italic;
 }
 
-/* Trabajos */
-.__column {
-    display: flex;
-    flex-direction: column;
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+}
 
-    &--info {
-        width: 400px;
-        display: flex;
-        flex-direction: column;
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+/* Trabajos */
+.jobs {
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
     }
 
+    .item {
+        &-a {
+            grid-row: 1 / 5;
+        }
+
+        &-b {
+            grid-column: 4 / 4;
+        }
+
+        &-c {
+            grid-row: 2 / 3;
+        }
+
+        &-d {
+            grid-column: 4 / 3;
+        }
+
+
+    }
+}
+
+.videoTrabajos1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 300px;
+    width: 100%;
+    height: 250px;
+
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        margin-left: 50px;
+        border-top: 5px dashed blue;
+        border-right: 5px dashed green;
+        border-left: 5px dashed red;
+        border-bottom: 5px dashed rgb(255, 0, 157);
+        border-radius: 10px;
+    }
+
+    p {
+        margin: 50px;
+        font-family: $titleFont;
+        font-size: 25px;
+        width: 100%;
+        display: inline;
+
+
+    }
+
+
 }
 
 
 
-.linkJob img {
-    width: 150px;
-    height: 120px;
-    margin: 50px;
-    image-rendering: optimizeQuality;
 
-}
+
+
+
+
+
+
+
+
 
 .info {
 

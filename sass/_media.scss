@@ -32,6 +32,9 @@ $mobile : 580px;
 
         
     }
+    .txt p {
+        font-size: 2rem;
+    }
 
     .map {
         width: 560px;
@@ -111,25 +114,38 @@ $mobile : 580px;
     #menuFooter {
         display: none;
     }
+   
 
-    .__column--info {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .info {
-        margin: auto;
-        flex-wrap: nowrap;
-        border: 3px dashed rgba(0, 0, 0, 0.548);
-        border-radius: 5px;
-
-        p {
-            color: black;
-            text-align: center;
+   .jobs{
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+    .item{
+        &-a img {
+            width: 100%;
+            height: auto;
         }
+        &-b{
+            display: flex;
+            flex-direction: column-reverse;
+        } 
+        img {
+            width: 100%;
+            height: auto;
+        }
+        &-c img {
+            width: 100%;
+            height: auto;
+        }
+        &-d img {
+            width: 100%;
+            height: auto;
+        }
+        
     }
+   }
+
+    
 
     .videoTrabajos iframe {
         width: 100%;
@@ -141,6 +157,7 @@ $mobile : 580px;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        
     }
 
     /* Portfolio */
