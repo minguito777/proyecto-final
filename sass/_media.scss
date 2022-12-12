@@ -13,9 +13,14 @@ $mobile : 580px;
         font-family: $btnFont;
         height: auto;
         
+        
         border-radius: 25px;
         width: 100%;
         margin: 2px;
+        a {
+            font-size: medium;
+            text-align: start;
+        }
 
         :hover {
             background-color: $colorBtnHoverBg;
@@ -155,6 +160,7 @@ $mobile : 580px;
     position: relative;
     top: 300px;
     right: 55px;
+    margin-left: 30px;
     
 
 

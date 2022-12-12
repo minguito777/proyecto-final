@@ -539,6 +539,10 @@ p.bloqueTexto--mas {
     width: 100%;
     margin: 2px;
   }
+  .nav-flex div a {
+    font-size: medium;
+    text-align: start;
+  }
   .nav-flex div :hover {
     background-color: rgb(17, 17, 20);
     font-family: "Permanent Marker", cursive;
@@ -641,6 +645,7 @@ p.bloqueTexto--mas {
     position: relative;
     top: 300px;
     right: 55px;
+    margin-left: 30px;
   }
   .videoTrabajos1 p {
     display: none;
