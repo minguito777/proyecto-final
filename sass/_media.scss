@@ -1,7 +1,7 @@
 $mobile : 580px;
 
 @media (max-width: $mobile) {
-    .nav-flex div  {
+    .nav-flex div {
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -12,11 +12,12 @@ $mobile : 580px;
         color: rgb(17, 17, 20);
         font-family: $btnFont;
         height: auto;
-        
-        
+
+
         border-radius: 25px;
         width: 100%;
         margin: 2px;
+
         a {
             font-size: medium;
             text-align: start;
@@ -30,13 +31,113 @@ $mobile : 580px;
     }
 
     #imagenFrontal {
-        
-        
-        height: 480px;
-        
 
-        
+
+        height: 480px;
+
+
+
     }
+
+    .boxGradiante,
+    .boxGradiante2,
+    .boxGradiante3,
+    .boxGradiante4 {
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+    }
+
+    .caja1 {
+        background-color: rgb(0, 255, 42);
+        color: red;
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+        display: none;
+
+    }
+
+    .caja2 {
+        background-color: rgb(0, 38, 255);
+        color: red;
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+    }
+
+    .caja3 {
+        background-color: rgb(255, 196, 0);
+        color: red;
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+    }
+
+    .caja4 {
+        background-color: rgb(225, 0, 255);
+        color: red;
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+        display: none;
+    }
+
+    .caja5 {
+        background-color: rgb(255, 0, 0);
+        color: rgb(60, 255, 0);
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+        display: none;
+    }
+
+    .caja6 {
+        background-color: rgb(0, 81, 255);
+        color: red;
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+    }
+
+    .caja7 {
+        background-color: rgb(255, 60, 0);
+        color: red;
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+    }
+
+    .caja8 {
+        background-color: aqua;
+        color: red;
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+        display: none;
+
+    }
+
+    .caja1m,
+    .caja4m,
+    .caja5m,
+    .caja8m {
+        display: block;
+        background-color: aqua;
+        color: red;
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+    }
+
     .txt p {
         font-size: 2rem;
     }
@@ -98,7 +199,7 @@ $mobile : 580px;
     .video {
         width: 80%;
         height: auto;
-        margin-left: 50px;
+        margin: auto;
 
     }
 
@@ -123,60 +224,65 @@ $mobile : 580px;
     /* Trabajos */
 
 
-   
 
-   .jobs{
-    display: flex;
-    flex-direction: column;
-    column-gap: 5px;
-    .item{
-        &-a img {
-            width: 100%;
-            height: auto;
+
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+
+        .item {
+            &-a img {
+                width: 100%;
+                height: auto;
+            }
+
+            &-b {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            &-c img {
+                width: 100%;
+                height: auto;
+            }
+
+            &-d img {
+                width: 100%;
+                height: auto;
+            }
+
         }
-        &-b{
-            display: flex;
-            flex-direction: column-reverse;
-        } 
-        img {
-            width: 100%;
-            height: auto;
-        }
-        &-c img {
-            width: 100%;
-            height: auto;
-        }
-        &-d img {
-            width: 100%;
-            height: auto;
-        }
-        
-    }
-   }
-
-
-   .videoTrabajos1 {
-    
-    position: relative;
-    top: 300px;
-    right: 55px;
-    margin-left: 30px;
-    
-
-
-   
-
-    p {
-       
-        display: none;
-
-
     }
 
 
-}
+    .videoTrabajos1 {
 
-    
+        position: relative;
+        top: 300px;
+        right: 55px;
+        margin: auto;
+
+
+
+
+
+        p {
+
+            display: none;
+
+
+        }
+
+
+    }
+
+
 
     .videoTrabajos iframe {
         width: 100%;
@@ -188,7 +294,7 @@ $mobile : 580px;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     /* Portfolio */
