@@ -493,18 +493,38 @@ iframe {
     .item {
         &-a {
             grid-row: 1 / 5;
+            p {
+                color: white;
+                background-color: black;
+                margin: 5px;
+            }
         }
 
         &-b {
             grid-column: 4 / 4;
+            p {
+                color: white;
+                background-color: black;
+                margin: 5px;
+            }
         }
 
         &-c {
             grid-row: 2 / 3;
+            p {
+                color: white;
+                background-color: black;
+                margin: 5px;
+            }
         }
 
         &-d {
             grid-column: 4 / 3;
+            p {
+                color: white;
+                background-color: black;
+                margin: 5px;
+            }
         }
 
 
@@ -733,7 +753,16 @@ p.bloqueTexto--mas {
         width: 100%;
         height: 100%;
     }
+    &-poi p {
+        font-size: large;
+        color: rgb(33, 3, 61);        
+        margin: 5px;
+        font-family: sans-serif;
+        font-weight: 900
+        
+    }
 }
+
 
 
 /* media querys */

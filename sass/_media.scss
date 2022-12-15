@@ -143,20 +143,15 @@ $mobile : 580px;
     }
 
     .map {
-        width: 560px;
-        height: 250px;
-        position: absolute;
-        bottom: -600px;
+       
         display: none;
 
         &-poi {
-            width: 360px;
-            height: 250px;
-            position: absolute;
-            bottom: -600px;
-            left: 625px;
-            margin-left: 5px;
-            overflow: hidden;
+           background: linear-gradient(170deg, red 35%, blue);
+           p {
+            color: white;
+           }
+            
         }
 
         iframe {
@@ -322,6 +317,10 @@ $mobile : 580px;
 
 
         }
+    }
+    .pFlex {
+        margin: auto;
+        padding: 8px;
     }
 
     .videoTrabajos {
