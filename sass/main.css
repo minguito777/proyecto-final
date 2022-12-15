@@ -23,9 +23,11 @@
 header {
   width: 100%;
   height: auto;
-  background-color: rgb(146, 143, 163);
+  background: radial-gradient(rgba(243, 241, 241, 0.658) 20%, rgba(88, 56, 187, 0.5) 75%);
   margin: 5px;
   padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px 15px 0px 0px;
 }
 header #logo img {
   margin: 5px;
@@ -43,6 +45,7 @@ header #titulo p {
   padding-top: 20px;
   margin-bottom: 10px;
   text-align: center;
+  font-weight: bold;
 }
 
 .nav-flex {
@@ -290,6 +293,10 @@ main {
 #footer {
   height: auto;
   background-color: rgb(17, 17, 20);
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px 0px 15px 15px;
 }
 
 #menuFooter {
@@ -387,8 +394,7 @@ body {
   border-bottom: 5px dashed yellow;
   border-radius: 10px;
 }
-
-iframe {
+.video iframe {
   width: 100%;
   height: 100%;
 }
@@ -648,7 +654,6 @@ p.bloqueTexto--mas {
     padding: 2px;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(8, 110, 141);
     color: rgb(17, 17, 20);
     font-family: Georgia, "Times New Roman", Times, serif;
     height: auto;
@@ -659,6 +664,7 @@ p.bloqueTexto--mas {
   .nav-flex div a {
     font-size: medium;
     text-align: start;
+    font-weight: bold;
   }
   .nav-flex div :hover {
     background-color: rgb(17, 17, 20);
@@ -785,7 +791,7 @@ p.bloqueTexto--mas {
     margin-inline: 0;
   }
   .txt--info {
-    width: 60%;
+    width: 100%;
     height: auto;
     display: none;
   }
@@ -794,9 +800,10 @@ p.bloqueTexto--mas {
     height: auto;
     margin: auto;
   }
-  iframe {
+  .video iframe {
     width: 100%;
     height: 100%;
+    margin-top: 2.5px;
   }
   .img {
     display: none;
@@ -839,7 +846,8 @@ p.bloqueTexto--mas {
     position: relative;
     top: 300px;
     right: 55px;
-    margin: auto;
+    margin: 5px 13px;
+    width: 95%;
   }
   .videoTrabajos1 p {
     display: none;
@@ -877,6 +885,9 @@ p.bloqueTexto--mas {
   .pFlex {
     margin: auto;
     padding: 8px;
+  }
+  .pFlex h2, .pFlex h3, .pFlex p {
+    text-align: center;
   }
   .videoTrabajos {
     display: none;

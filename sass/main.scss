@@ -24,9 +24,11 @@
 header {
     width: 100%;
     height: auto;
-    background-color: rgb(146, 143, 163);
+    background: radial-gradient(rgba(243, 241, 241, 0.658) 20%, rgba(88, 56, 187, 0.5) 75%);
     margin: 5px;
     padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px 15px 0px 0px;
 
     #logo {
         img {
@@ -47,6 +49,8 @@ header {
             padding-top: 20px;
             margin-bottom: 10px;
             text-align: center;
+            font-weight: bold;
+            
         }
     }
 }
@@ -343,6 +347,10 @@ main {
 #footer {
     height: auto;
     background-color: $colorBtnHoverBg;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 0px 0px 15px 15px;
 }
 
 #menuFooter {
@@ -452,12 +460,13 @@ body {
     border-left: 5px dashed red;
     border-bottom: 5px dashed yellow;
     border-radius: 10px;
-}
-
-iframe {
+    iframe {
     width: 100%;
     height: 100%;
 }
+}
+
+
 
 .txt--info {
     width: 150px;
