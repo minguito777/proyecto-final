@@ -50,7 +50,7 @@ header {
             margin-bottom: 10px;
             text-align: center;
             font-weight: bold;
-            
+
         }
     }
 }
@@ -104,26 +104,29 @@ header {
     left: 20px;
     bottom: 50px;
     z-index: 1;
-    p{
-        
+
+    p {
+
         display: none;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: black;
         font-size: medium;
         font-weight: bold;
         background-color: darkgrey;
-        
+
     }
-    
+
 
 
 }
+
 .whatsapp:hover p {
     display: inline;
     visibility: visible;
-        
+
 }
 
 
@@ -270,71 +273,74 @@ main {
 
 }
 
-.caja1 {
-    background-color: rgb(0, 255, 42);
-    color: red;
-    border: 1px solid black;
-    width: 55%;
-    height: 500px;
-
-}
-
-.caja2 {
-    background-color: rgb(0, 38, 255);
-    color: red;
-    border: 1px solid black;
-    width: 35%;
-    height: 250px;
-}
-
-.caja3 {
-    background-color: rgb(255, 196, 0);
-    color: red;
-    border: 1px solid black;
-    width: 35%;
-    height: 250px;
-}
-
-.caja4 {
-    background-color: rgb(225, 0, 255);
-    color: red;
-    border: 1px solid black;
-    width: 55%;
-    height: 500px;
-}
-
-.caja5 {
-    background-color: rgb(255, 0, 0);
-    color: rgb(60, 255, 0);
-    border: 1px solid black;
-    width: 55%;
-    height: 500px;
-}
-
-.caja6 {
-    background-color: rgb(0, 81, 255);
-    color: red;
-    border: 1px solid black;
-    width: 35%;
-    height: 250px;
-}
-
-.caja7 {
-    background-color: rgb(255, 60, 0);
-    color: red;
-    border: 1px solid black;
-    width: 35%;
-    height: 250px;
-}
-
+.caja1,
+.caja4,
+.caja5,
 .caja8 {
-    background-color: aqua;
-    color: red;
-    border: 1px solid black;
+
+
     width: 55%;
     height: 500px;
 
+    img {
+        width: 100%;
+        height: 100%;
+
+    }
+
 }
+
+
+
+
+
+
+
+
+
+.caja7,
+.caja6,
+.caja3,
+.caja2 {
+
+
+
+    width: 35%;
+    height: 250px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    p {
+        width: 60%;
+        height: auto;
+        color: $headFont;
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-align: start;
+        text-justify: distribute;
+    }
+
+    span {
+        font-size: 80px;
+        font-family: 'Secular One', sans-serif;
+        color: rgb(223, 16, 16);
+
+
+    }
+
+}
+
+.caja2m,
+.caja3m,
+.caja6m,
+.caja7m {
+    display: none;
+}
+
+
+
 .caja1m,
 .caja4m,
 .caja5m,
@@ -460,10 +466,11 @@ body {
     border-left: 5px dashed red;
     border-bottom: 5px dashed yellow;
     border-radius: 10px;
+
     iframe {
-    width: 100%;
-    height: 100%;
-}
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -502,6 +509,7 @@ body {
     .item {
         &-a {
             grid-row: 1 / 5;
+
             p {
                 color: white;
                 background-color: black;
@@ -511,6 +519,7 @@ body {
 
         &-b {
             grid-column: 4 / 4;
+
             p {
                 color: white;
                 background-color: black;
@@ -520,6 +529,7 @@ body {
 
         &-c {
             grid-row: 2 / 3;
+
             p {
                 color: white;
                 background-color: black;
@@ -529,6 +539,7 @@ body {
 
         &-d {
             grid-column: 4 / 3;
+
             p {
                 color: white;
                 background-color: black;
@@ -762,13 +773,13 @@ p.bloqueTexto--mas {
         width: 100%;
         height: 100%;
     }
+
     &-poi p {
         font-size: large;
-        color: rgb(33, 3, 61);        
+        color: rgb(33, 3, 61);
         margin: 5px;
         font-family: sans-serif;
         font-weight: 900
-        
     }
 }
 

@@ -218,68 +218,57 @@ main {
   margin-bottom: 150px;
 }
 
-.caja1 {
-  background-color: rgb(0, 255, 42);
-  color: red;
-  border: 1px solid black;
-  width: 55%;
-  height: 500px;
-}
-
-.caja2 {
-  background-color: rgb(0, 38, 255);
-  color: red;
-  border: 1px solid black;
-  width: 35%;
-  height: 250px;
-}
-
-.caja3 {
-  background-color: rgb(255, 196, 0);
-  color: red;
-  border: 1px solid black;
-  width: 35%;
-  height: 250px;
-}
-
-.caja4 {
-  background-color: rgb(225, 0, 255);
-  color: red;
-  border: 1px solid black;
-  width: 55%;
-  height: 500px;
-}
-
-.caja5 {
-  background-color: rgb(255, 0, 0);
-  color: rgb(60, 255, 0);
-  border: 1px solid black;
-  width: 55%;
-  height: 500px;
-}
-
-.caja6 {
-  background-color: rgb(0, 81, 255);
-  color: red;
-  border: 1px solid black;
-  width: 35%;
-  height: 250px;
-}
-
-.caja7 {
-  background-color: rgb(255, 60, 0);
-  color: red;
-  border: 1px solid black;
-  width: 35%;
-  height: 250px;
-}
-
+.caja1,
+.caja4,
+.caja5,
 .caja8 {
-  background-color: aqua;
-  color: red;
-  border: 1px solid black;
   width: 55%;
   height: 500px;
+}
+.caja1 img,
+.caja4 img,
+.caja5 img,
+.caja8 img {
+  width: 100%;
+  height: 100%;
+}
+
+.caja7,
+.caja6,
+.caja3,
+.caja2 {
+  width: 35%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caja7 p,
+.caja6 p,
+.caja3 p,
+.caja2 p {
+  width: 60%;
+  height: auto;
+  color: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: start;
+  text-justify: distribute;
+}
+.caja7 span,
+.caja6 span,
+.caja3 span,
+.caja2 span {
+  font-size: 80px;
+  font-family: "Secular One", sans-serif;
+  color: rgb(223, 16, 16);
+}
+
+.caja2m,
+.caja3m,
+.caja6m,
+.caja7m {
+  display: none;
 }
 
 .caja1m,
@@ -671,15 +660,18 @@ p.bloqueTexto--mas {
     font-family: "Permanent Marker", cursive;
     color: white;
   }
-  #imagenFrontal {
-    height: 480px;
+  #imagenFrontal div img {
+    width: 100%;
+    height: 300px;
+    /* height: auto; */
   }
   .boxGradiante,
 .boxGradiante2,
 .boxGradiante3,
 .boxGradiante4 {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
     width: 100%;
     height: auto;
     margin: auto;
@@ -687,64 +679,16 @@ p.bloqueTexto--mas {
     justify-content: center;
     margin-bottom: 10px;
   }
-  .caja1 {
-    background-color: rgb(0, 255, 42);
-    color: red;
-    border: 1px solid black;
-    width: 100%;
-    height: 200px;
+  .caja1,
+.caja4,
+.caja5,
+.caja8 {
     display: none;
   }
-  .caja2 {
-    background-color: rgb(0, 38, 255);
-    color: red;
-    border: 1px solid black;
-    width: 100%;
-    height: 200px;
-  }
-  .caja3 {
-    background-color: rgb(255, 196, 0);
-    color: red;
-    border: 1px solid black;
-    width: 100%;
-    height: 200px;
-  }
-  .caja4 {
-    background-color: rgb(225, 0, 255);
-    color: red;
-    border: 1px solid black;
-    width: 100%;
-    height: 200px;
-    display: none;
-  }
-  .caja5 {
-    background-color: rgb(255, 0, 0);
-    color: rgb(60, 255, 0);
-    border: 1px solid black;
-    width: 100%;
-    height: 200px;
-    display: none;
-  }
-  .caja6 {
-    background-color: rgb(0, 81, 255);
-    color: red;
-    border: 1px solid black;
-    width: 100%;
-    height: 200px;
-  }
-  .caja7 {
-    background-color: rgb(255, 60, 0);
-    color: red;
-    border: 1px solid black;
-    width: 100%;
-    height: 200px;
-  }
-  .caja8 {
-    background-color: aqua;
-    color: red;
-    border: 1px solid black;
-    width: 100%;
-    height: 200px;
+  .caja7,
+.caja6,
+.caja3,
+.caja2 {
     display: none;
   }
   .caja1m,
@@ -752,11 +696,51 @@ p.bloqueTexto--mas {
 .caja5m,
 .caja8m {
     display: block;
-    background-color: aqua;
-    color: red;
-    border: 1px solid black;
+  }
+  .caja2m,
+.caja3m,
+.caja6m,
+.caja7m {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .caja2m p,
+.caja3m p,
+.caja6m p,
+.caja7m p {
+    width: 100%;
+    height: 100;
+    color: black;
+    font-size: small;
+    font-weight: 900;
+    text-align: center;
+  }
+  .caja2m span,
+.caja3m span,
+.caja6m span,
+.caja7m span {
+    font-size: 80px;
+    font-family: "Secular One", sans-serif;
+    color: rgb(223, 16, 16);
+  }
+  .caja1m,
+.caja4m,
+.caja5m,
+.caja8m {
+    display: block;
     width: 100%;
     height: 200px;
+  }
+  .caja1m img,
+.caja4m img,
+.caja5m img,
+.caja8m img {
+    width: 100%;
+    height: 100%;
   }
   .txt p {
     font-size: 2rem;
@@ -886,7 +870,9 @@ p.bloqueTexto--mas {
     margin: auto;
     padding: 8px;
   }
-  .pFlex h2, .pFlex h3, .pFlex p {
+  .pFlex h2,
+.pFlex h3,
+.pFlex p {
     text-align: center;
   }
   .videoTrabajos {
